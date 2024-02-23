@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <style>
+        #player-cards, #dealer-cards {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blackjack</h1>
+    <button onclick="startGame()">Start Game</button>
+    <div id="dealer">
+        <h2>Dealer</h2>
+        <div id="dealer-cards"></div>
+        <p id="dealer-score"></p>
+    </div>
+    <div id="player">
+        <h2>Player</h2>
+        <div id="player-cards"></div>
+        <p id="player-score"></p>
+    </div>
+    <button onclick="hit()">Hit</button>
+    <button onclick="stand()">Stand</button>
+
+    <script src="script.js"> </script>
+</body>
+</html>
